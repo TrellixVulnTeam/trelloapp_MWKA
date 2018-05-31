@@ -1,0 +1,23 @@
+{
+  "schema_version": "2.0",
+  "resources": [
+    {
+      "role_name": "reinvent-dev",
+      "role_arn": "arn:aws:iam::886465325847:role/reinvent-dev",
+      "name": "default-role",
+      "resource_type": "iam_role"
+    },
+    {
+      "lambda_arn": "arn:aws:lambda:eu-west-2:886465325847:function:reinvent-dev",
+      "name": "api_handler",
+      "resource_type": "lambda_function"
+    },
+    {
+      "name": "rest_api",
+      "rest_api_id": "1cu8u2it24",
+      "rest_api_url": "https://1cu8u2it24.execute-api.eu-west-2.amazonaws.com/api/",
+      "resource_type": "rest_api"
+    }
+  ],
+  "backend": "api"
+}
